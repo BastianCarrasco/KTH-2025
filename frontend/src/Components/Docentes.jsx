@@ -1,14 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { investigador } from "./investigadores";
 
 const Docentes = () => {
+  const [busqueda, setBusqueda] = useState("");
+  const [escuelaFiltro, setEscuelaFiltro] = useState("");
+
+  // Filtrar los investigadores según el nombre y la escuela
+  const filteredInvestigadores = investigador.filter((investigador) => {
+    const nombreCoincide = investigador.nombre
+      .toLowerCase()
+      .includes(busqueda.toLowerCase());
+    const escuelaCoincide =
+      escuelaFiltro === "" || investigador.escuela === escuelaFiltro;
+    return nombreCoincide && escuelaCoincide;
+  });
+
+  // Obtener las escuelas únicas para el filtro
+  const escuelas = [...new Set(investigador.map((inv) => inv.escuela))];
+
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-6 text-center">
         Lista de Investigadores
       </h1>
+
+      {/* Filtros */}
+      <div className="mb-6 flex justify-between">
+        {/* Filtro por Escuela */}
+        <select
+          className="p-2 border rounded"
+          value={escuelaFiltro}
+          onChange={(e) => setEscuelaFiltro(e.target.value)}
+        >
+          <option value="">Filtrar por Escuela</option>
+          {escuelas.map((escuela, index) => (
+            <option key={index} value={escuela}>
+              {escuela}
+            </option>
+          ))}
+        </select>
+
+        {/* Filtro por Nombre */}
+        <input
+          type="text"
+          className="p-2 border rounded"
+          placeholder="Buscar por nombre"
+          value={busqueda}
+          onChange={(e) => setBusqueda(e.target.value)}
+        />
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {investigador.map((investigador, index) => (
+        {filteredInvestigadores.map((investigador, index) => (
           <div
             key={index}
             className="flex bg-gray-100 rounded-lg shadow-md p-4"

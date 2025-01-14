@@ -141,7 +141,10 @@ const Formulario = () => {
         <div className="overflow-y-scroll max-h-[70vh]">
           {preguntasFiltradas.map((pregunta, preguntaIndex) => (
             <div key={preguntaIndex} className="mb-4">
-              <p className="mb-2 font-medium">{pregunta.texto_pregunta}</p>
+              <div style={{ backgroundColor: "lightblue", fontSize: "24px" }}>
+                <p className="mb-2 font-medium">{pregunta.texto_pregunta}</p>
+              </div>
+
               {pregunta.alternativas.map((alternativa, alternativaIndex) => (
                 <div key={alternativaIndex} className="mb-2">
                   <p className="mb-2">{alternativa}</p>

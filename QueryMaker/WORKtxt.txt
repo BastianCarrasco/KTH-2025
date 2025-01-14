@@ -1,0 +1,179 @@
+IdPregunta,Pregunta,Clase,IdPreg_Altern,IdAlternativa,Alternativa
+1,Hipotesis de posibles necesidad de mercado,CRL,1,1,"Existe conocimiento limitado del mercado y de los clientes/usuarios (quiénes son, etc.)"
+2,Necesidades especificcas identificadas en el mercado,CRL,1,2,"Existe una hipótesis sobre los posibles clientes/usuarios para el producto o servicio aunque no son claras, son especulativas y no hay pruebas ni análisis que respalden las suposiciones."
+3,Se establece la primera retoralimentacion del mercado,CRL,1,3,Se ha identificado una posible necesidad/problema en el mercado que atender a través de un producto/servicio
+4,Problema/necesidades confimadas de varios de clientes o usuarios,CRL,2,4,Hay una primera descripción razonablemente clara de la hipótesis del problema/necesidad
+5,Establecimiento de intereses y relaciones con los clientes,CRL,2,5,"Existe una breve familiarización con el mercado, posibles clientes y sus problemas/necesidades, y alternativas"
+6,Beneficios confirmados por la primeras pruebas del cliente,CRL,2,6,"Se han realizado algunos estudios de mercado, normalmente derivados de fuentes secundarias."
+7,Clientes en pruebas extendidas o primeras ventas de prueba.Pequeño número de usuarios activos.,CRL,3,7,Hay una primera descripción razonablemente clara de la hipótesis del problema/necesidad
+8,Primeras ventas comerciales y proceso de ventas implementado. Número sustancial de usuarios activos.,CRL,3,8,"Existe una breve familiarización con el mercado, posibles clientes y sus problemas/necesidades, y alternativas"
+9,Ventas generalizadas a esa escala. Gran número de usuarios activos con un crecimiento sustancial.,CRL,3,9,"Se han realizado algunos estudios de mercado, normalmente derivados de fuentes secundarias."
+10,Falta de competencias/recursos necesarios para verificar la idea. Poca percepción de las necesidades del equipo (típicamente un individuo). ,TEAM,4,10,Se ha definido una hipótesis de producto/servicio con un posicionamiento claro frente a las alternativas del cliente en función de la retroalimentación del cliente/usuario
+11,Competencias limitadas en el lugar para comenzar a verificar la idea. Primera idea de competencias o recursos adicionales necesarios.,TEAM,4,11,"Se ha Identificado quién es el usuario, el cliente que paga y el tomador de decisiones"
+12,Algunas de las competencias necesarias para verificar/desarrollar la idea. Competencias necesarias definidas (y plan para encontrarlas).,TEAM,4,12,Se tienen una segmentación de clientes con perfiles de clientes básicos iniciales establecidos
+13,Un campeón está presente con una idea clara de la dirección (inicio/otro camino). Varias competencias necesarias en su lugar plan iniciado para complementar.",TEAM,4,13,"El problema/necesidad y su importancia son confirmados por múltiples clientes o usuarios. Los números suelen ser limitados, pero dependen de B2B/B2C y de la estructura del mercado (por ejemplo, 5-10 en B2B, si el mercado está concentrado en 2-5 clientes líderes del mercado, en B2C más alto, por ejemplo, 10-20)"
+14,Equipo fundador inicial con las principales competencias y capacidades necesarias. El equipo acuerda la propiedad los roles los objetivos y las visiones.",TEAM,5,14,Hay un primer argumento de venta definido y propuesta de valor adaptada al cliente/segmento objetivo
+15,Equipo fundador complementario diverso y comprometido con todas las competencias y capacidades necesarias para comenzar a construir un negocio.",TEAM,5,15,Se ha decidido en qué clientes/segmentos objetivo enfocarse primero
+16,Equipo y cultura que funcionan bien. Plan de crecimiento para expandir el equipo y desarrollar la organización a lo largo del tiempo.,TEAM,5,16,Existen relaciones establecidas con posibles clientes/usuarios objetivo que brindan información
+17,Organización profesional establecida (junta director ejecutivo gerencia personal).",TEAM,5,17,"Los clientes/usuarios han expresado interés por el producto/servicio y han confirmado que puede resolver los problemas/necesidades de los clientes (es decir, ajuste inicial entre problema y solución)"
+18,Organización bien estructurada y de alto rendimiento en todos los niveles que se mantiene se desarrolla y funciona a lo largo del tiempo.",TEAM,6,18,Se tienen posibles socios identificados o partes interesadas clave relevantes para llegar a los clientes/usuarios
+19,Hipótesis nula o poco clara de la posible idea de negocio potencial de mercado y competencia.",BRL,6,19,Se ha definido el primer proceso de adquisición de ventas/usuarios e inició actividades de ventas estructuradas
+20,Primera hipótesis del posible concepto de negocio (en cualquier formato) e identificación del potencial general del mercado y la competencia.,BRL,6,20,Se tiene el argumento de venta actualizado y propuesta de valor basada en comentarios de clientes/usuarios
+21,Descripción del modelo de negocio sostenible y mercado(s) objetivo incluida la competencia.",BRL,6,21,La prueba del producto/servicio por parte de los clientes/usuarios ha confirmado el valor y los beneficios para el cliente
+22,Primeros cálculos que indican un modelo de negocio económicamente viable.Primera evaluación que indica sostenibilidad ambiental y social.,BRL,7,22,Ya se han tenido discusiones iniciadas con socios para llegar a clientes/usuarios (cuando sea relevante)
+23,Supuestos clave en el modelo de negocio sostenible probado en el mercado.,BRL,7,23,Se tiene un pequeño número de usuarios activos de versiones anteriores del producto/servicio
+24,Modelo de negocio sostenible completo probado en clientes socios proveedores (por ejemplo mediante ventas de prueba) los cálculos muestran viabilidad económica.",BRL,7,24,Hay acuerdos de clientes vigentes: primeras ventas/ventas de prueba de versiones anteriores de productos/servicios o clientes/usuarios involucrados en calificaciones de productos/servicios o pruebas extendidas
+25,Viabilidad del modelo de negocio sostenible (precios modelo de ingresos etc.) validado por las ventas comerciales iniciales.",BRL,8,25,Se tienen acuerdos vigentes con los primeros socios para llegar a los clientes (cuando corresponda)
+26,Las ventas y las métricas muestran que el modelo de negocio sostenible es viable,BRL,8,26,"Ya hay un proceso de venta/adquisición de usuarios implementado con personas dedicadas y sistemas de soporte (sistema CRM, etc.)"
+27,Modelo de negocio sostenible que ha demostrado cumplir con las expectativas internas y externas sobre beneficios escalabilidad e impacto a lo largo del tiempo",BRL,8,27,Se tiene una tracción inicial del cliente a través de un número sustancial de usuarios activos de productos/servicios listos para el mercado.
+28,Hipotetizar sobre sus posibles derechos de propiedad intelectual.,IPRL,8,28,Ya esta el producto/servicio listo para el mercado y vendido a los clientes al precio de mercado objetivo o cerca de él
+29,Identificó diferentes formas de posibles DPI que tiene/crea. Se aclara la propiedad y puede utilizar los DPI pertinentes.,IPRL,9,29,"La empresa se enfoca en el desarrollo comercial, la adquisición de clientes, el crecimiento de las ventas, los esfuerzos para generar demanda de usuarios/clientes, etc."
+30,Descripción de la posible clave de IPR con cierto detalle. Evaluación inicial del potencial para proteger los DPI clave.,IPRL,9,30,Ya se tiene un número grande y sustancialmente creciente de usuarios activos (tracción significativa de clientes).
+31,Confirmó que la protección de los DPI es posible y para qué. Decidió por qué proteger ciertos DPI (relevancia comercial).,IPRL,9,31,"Ya hay una implementación generalizada de productos, ventas a varios clientes de manera repetible y escalable (incluso a través de socios cuando sea relevante)."
+32,El borrador de la estrategia de IPR para crear valor comercial está en su lugar. Presentación de la primera solicitud/registro formal de derechos de propiedad intelectual clave.,IPRL,10,32,"Poca información sobre las competencias necesarias/necesarias y otros recursos necesarios (por ejemplo, socios, proveedores de servicios, etc.) para verificar y desarrollar la idea"
+33,Primera estrategia completa de DPI implementada considerando diferentes DPI. Respuesta positiva en solicitudes/registros presentados.,IPRL,10,33,"Por lo general, una persona que carece de las competencias necesarias en áreas clave como tecnología, negocios, etc."
+34,Solicitudes/registros formales presentados de DPI clave en países/regiones relevantes de acuerdo con la estrategia de DPI.,IPRL,11,34,Primera idea de objetivo general para el proyecto.
+35,Estrategia de DPI y prácticas de gestión totalmente implementadas. Solicitudes/registros formales presentados de DPI complementarios.,IPRL,11,35,Primera idea de qué personas/competencias adicionales podrían ser necesarias para verificar/desarrollar la idea
+36,Fuerte apoyo y protección de los DPI para las empresas. Protección de los DPI concedida y mantenida en los países pertinentes.,IPRL,11,36,Competencias y/o capacidad limitada presente - típicamente 1-2 personas
+37,No hay una descripción clara de las actividades de verificación inicial. No hay una visión clara de las necesidades iniciales de financiación y las opciones de financiación.,FRL,12,37,"Se define el plan inicial sobre cómo encontrar las competencias priorizadas necesarias (corto plazo, <1 año)"
+38,Descripción de las actividades de verificación inicial. Necesidad de financiación definida y fuentes de financiación para los hitos iniciales.,FRL,12,38,"Se identifican las necesidades y las brechas en las competencias, la capacidad y la diversidad del equipo."
+39,Financiamiento para el plan de verificación inicial asegurado.,FRL,12,39,"Una o varias personas que poseen algunas, pero no todas, las competencias y capacidades necesarias para comenzar a verificar la idea."
+40,Financiamiento para el plan de verificación elaborado asegurado.,FRL,13,40,"El equipo ha iniciado discusiones sobre roles, compromiso, propiedad, etc. Avanzando"
+41,Primer lanzamiento de financiación probado en una audiencia relevante. Definición de la necesidad de financiación a corto plazo y decisión sobre la estrategia de financiación.,FRL,13,41,"Se ha establecido e iniciado un plan para encontrar las competencias y capacidades adicionales necesarias (descritas, por ejemplo, en un perfil de requisitos), teniendo en cuenta la diversidad del equipo."
+42,Presentación mejorada para la financiación probada en una audiencia relevante. Contactos iniciados con fuentes de financiación externas relevantes.,FRL,13,42,"Varias, pero no todas, las competencias necesarias están presentes, típicamente múltiples individuos"
+43,Conversaciones iniciales con posibles fuentes de financiación externas. Presentación completa para financiación y material de apoyo listo.,FRL,13,43,Al menos un campeón (impulsor y comprometido con llevar adelante la idea) está presente
+44,Discusiones a nivel de hoja de términos con una o varias fuentes de financiación externas que muestren un claro interés.,FRL,13,44,"El equipo (o individuo) tiene una idea clara de cómo llevar la idea al mercado (inicio, acuerdo de propiedad intelectual, etc.)"
+45,Financiación asegurada para al menos 6-12 meses de operaciones. Sistema de pronóstico y monitoreo financiero completamente implementado.,FRL,14,45,Sistemas/procesos/herramientas iniciales implementados para compartir conocimientos e información dentro del equipo
+46,Resultados de investigación interesantes o idea de tecnología inicial identificada,TRL,14,46,"Actividades para obtener competencias y capacidades adicionales en progreso, teniendo en cuenta la diversidad del equipo"
+47,Concepto de tecnología y/o formulario de solicitud,TRL,14,47,"El equipo ha acordado sus respectivas acciones (acuerdo firmado). La propiedad es equilibrada e incentivadora, y refleja el compromiso y la contribución histórica y futura"
+48,Prueba de concepto de funciones críticas y/o características en laboratorio,TRL,14,48,"Equipo alineado con roles claros, metas y visiones compartidas y compromiso claro (por ejemplo, tiempo dedicado)"
+49,Validación de tecnología en laboratorio,TRL,14,49,Un equipo fundador inicial trabajando juntos y todos dedicando un tiempo significativo. El equipo fundador tiene en conjunto las principales competencias y capacidades necesarias para comenzar a construir esta startup.
+50,Validación de tecnología en un entorno relevante,TRL,15,50,"Conciencia de los riesgos para el desempeño del equipo (conflictos internos, política, agendas/prioridades en conflicto)"
+51,Demostración de prototipo de tecnología en un entorno relevante,TRL,15,51,"Conciencia de los riesgos para el desempeño del equipo (conflictos, agotamiento/salud mental, política, etc.)"
+52,Demostración de prototipo de tecnología en entorno operativo.,TRL,15,52,"Comenzó el reclutamiento de asesores y/o miembros de la junta, teniendo en cuenta la diversidad de la junta"
+53,Tecnología completa y demostrada en operaciones reales,TRL,15,53,Equipo comprometido donde todos sienten responsabilidad y rendición de cuentas
+54,Tecnología completa y probada en operaciones reales a lo largo del tiempo.,TRL,15,54,"Todas las competencias clave y la capacidad necesaria para el corto plazo están presentes, incl. un director ejecutivo claro"
+,,,15,55,"Equipo fundador complementario y diverso en el lugar, capaz de comenzar a construir un negocio"
+,,,16,56,Junta y asesores operativos y de apoyo al desarrollo empresarial y organizacional
+,,,16,57,Procesos/sistemas y plan para el aprendizaje continuo y el desarrollo del personal implementados
+,,,16,58,Planifique cómo construir la organización necesaria y hacer crecer el equipo a largo plazo (~ 2 años)
+,,,16,59,"Los objetivos, la visión, el propósito y la cultura están claramente articulados y documentados para apoyar el desarrollo organizacional y del equipo."
+,,,16,60,Equipo que funciona bien con roles claros
+,,,17,61,Todos los niveles de la organización están debidamente capacitados y motivados.
+,,,17,62,"Las contrataciones necesarias de acuerdo con el plan a más largo plazo están en curso para determinar las competencias, la capacidad y la diversidad relevantes en la organización."
+,,,17,63,Políticas/procesos/responsables de recursos humanos implementados para garantizar buenas prácticas de recursos humanos y diversidad del equipo
+,,,17,64,"Directorio competente y diverso, y asesores relevantes en el lugar y utilizados profesionalmente"
+,,,17,65,Hay un liderazgo claro y un equipo de gestión con experiencia profesional relevante.
+,,,18,66,"El equipo directivo se mantiene, desarrolla y realiza a lo largo del tiempo"
+,,,18,67,Los incentivos/recompensas están alineados para motivar a toda la organización a alcanzar los objetivos y desempeñarse bien
+,,,18,68,"Cultura organizacional, estructura, procesos, etc. se mejoran y desarrollan continuamente"
+,,,18,69,Todos los niveles de la organización participan activamente en el aprendizaje y el desarrollo continuos.
+,,,18,70,"La organización tiene un alto rendimiento y buen funcionamiento (cooperación, entorno social, etc.)"
+,,,19,71,Poco conocimiento o percepción de la competencia y soluciones alternativas
+,,,19,72,Poca información sobre el mercado y su potencial/tamaño-hipótesis sobre posibles aplicaciones
+,,,19,73,"Descripción inexistente o vaga e inespecífica de la posible idea de negocio, propuesta de valor o modelo de negocio"
+,,,20,74,"Breve familiaridad con el tamaño del mercado, los segmentos y el panorama competitivo (se enumeran algunos competidores/alternativas), generalmente derivados de fuentes secundarias"
+,,,20,75,Describió el concepto de negocio propuesto y la propuesta de valor en alguna forma estructurada
+,,,21,76,"Competencia definida e información relevante identificada del panorama competitivo en su modelo de negocio (posicionamiento de los competidores, modelos de negocio, precios, etc.)"
+,,,21,77,"Mercado(s) objetivo definido(s) y estimaciones del tamaño del mercado (TAM, SAM)"
+,,,21,78,Descripción de los factores relevantes en el modelo de negocio que causan una contribución positiva y negativa al medio ambiente y la sociedad (consulte la guía del usuario de KTH IRL)
+,,,21,79,"Descripción de un modelo de negocio propuesto en el lugar (por ejemplo, en formato de lienzo)"
+,,,22,80,"La evaluación inicial de la contribución positiva frente a la negativa indica sostenibilidad ambiental y social, basada en suposiciones y estimaciones propias (consulte la guía del usuario de KTH IRL)"
+,,,22,81,"La primera versión de las proyecciones simplificadas de pérdidas y ganancias para el modelo comercial propuesto (costos principales, principales fuentes de ingresos) indica viabilidad económica (basada en suposiciones y estimaciones propias)"
+,,,23,82,"Descripción del mercado objetivo (segmento(s) objetivo, TAM, SAM, SOM y análisis competitivo) actualizado en función de los comentarios del mercado"
+,,,23,83,La proyección de P&L actualizada basada en la retroalimentación del mercado indica viabilidad económica
+,,,23,84,Medidas clave para aumentar las contribuciones ambientales y sociales positivas y disminuir las negativas especificadas en el modelo de negocio (consulte la guía del usuario de KTH IRL)
+,,,23,85,"Recibió comentarios sobre el lado de los costos del modelo comercial (por ejemplo, producción, cadena de suministro, etc.) de algunos socios/proveedores/expertos externos"
+,,,23,86,"Recibió comentarios sobre el lado de los ingresos del modelo comercial (por ejemplo, modelo de ingresos, precios, etc.) de algunos clientes potenciales o personas con conocimiento del mercado (expertos)"
+,,,24,87,Proyecciones financieras completas basadas en comentarios de casos comerciales realistas que muestran viabilidad económica
+,,,24,88,"El modelo comercial sostenible completo (lado de los costos y el lado de los ingresos), incluidas las medidas clave para aumentar y disminuir la contribución ambiental y social negativa, se prueba en uno o varios escenarios comerciales realistas (venta de prueba, pedido anticipado, piloto, licitación, etc.). )"
+,,,25,89,"Acuerdos vigentes con proveedores clave, socios, socios de canal, etc. (alineado con sus expectativas de sostenibilidad) para ejecutar su modelo de negocio"
+,,,25,90,Proyecciones financieras completas validadas por primeras ventas/ingresos y datos
+,,,25,91,Las primeras ventas/ingresos en términos comerciales demuestran la disposición a pagar de un número significativo de clientes
+,,,26,92,"El modelo comercial está establecido, pero se ajusta para mejorar los ingresos/costos y aprovechar la sostenibilidad"
+,,,26,93,Los canales de venta y la cadena de suministro (alineados con sus expectativas de sostenibilidad) están establecidos y operativos
+,,,26,94,"Las ventas y otras métricas de las operaciones iniciales del negocio (1 a 3 años) hacen que el modelo de negocio sostenible se mantenga y se pueda cumplir con las expectativas internas y externas de ganancia sobria, escalabilidad e impacto ambiental y social"
+,,,27,95,"Los datos históricos sobre desempeño económico, ambiental y social demuestran un negocio viable, rentable y sostenible en el tiempo"
+,,,27,96,"Sistemas y métricas creíbles en uso para rastrear el desempeño económico, ambiental y social"
+,,,27,97,"El modelo de negocio sostenible está en funcionamiento y el negocio cumple o supera las expectativas internas y externas sobre beneficios, crecimiento, escalabilidad e impacto medioambiental y social."
+,,,28,98,"Tengo conocimiento limitado de la singularidad y el campo técnico, estado del arte, publicaciones, etc."
+,,,28,99,"Tengo Conocimiento limitado o falta de claridad con respecto a aspectos legales relevantes (propiedad, derechos de uso, etc.)"
+,,,28,100,Sé que no se cuenta con descripción y documentación de los posibles DPI
+,,,28,101,"Pueden existir algunas ideas sobre posibles DPI, pero son especulativas"
+,,,28,102,Tengo la hipótesis de que los resultados o las ideas pueden contener alguna forma posible de derechos de propiedad intelectual.
+,,,29,103,"Tengo identificados acuerdos relacionados con la propiedad intelectual y se aclara la propiedad. Se aclaran los inventores/creadores. Conocimiento de las políticas de PI aplicables, posibles restricciones en los contratos, etc."
+,,,29,104,"Tengo ideas específicas para los DPI, pero no están bien descritas ni definidas."
+,,,29,105,Mapeó diferentes formas de DPI que existen o podrían surgir durante el desarrollo (consulte la lista de DPI)
+,,,30,106,He realizado búsquedas iniciales o análisis por parte de profesionales del estado de la técnica pertinente o DPI en conflicto
+,,,30,107,"He realizado una evaluación de las posibilidades de protección mediante, por ejemplo, búsquedas propias de publicaciones, soluciones de última generación, etc. en el campo"
+,,,30,108,Tengo una descripción suficientemente detallada de posibles DPI para evaluar la posibilidad de protección
+,,,30,109,Soy consciente de qué formas de DPI son clave/más importantes y podrían/deberían protegerse
+,,,31,110,"He presentado la primera solicitud/registro de DPI en alguna forma menos elaborada, por ejemplo, presentación propia de marca comercial, solicitud de patente ""provisional"" (es decir, no redactada profesionalmente), etc."
+,,,31,111,He analizado (idealmente con un profesional) los DPI clave y cuáles deberían ser las prioridades sobre qué proteger para crear valor para el negocio/proyecto
+,,,31,112,Tengo posibilidades confirmadas de protección de DPI clave mediante búsquedas/análisis por parte de un profesional
+,,,32,113,"Tengo acuerdos básicos vigentes para determinar el control de los DPI clave (por ejemplo, asignaciones, propiedad, etc.)"
+,,,32,114,Llevé a cabo mi primera solicitud/registro formal completo de clave de DPI presentado en cooperación con profesionales
+,,,32,115,"Tengo un borrador de estrategia de DPI implementado: primer análisis y plan (preferiblemente por parte de un profesional) sobre cómo se pueden usar diferentes DPI para proteger y ser valiosos para el negocio. (ver, por ejemplo, la herramienta KTH IPR Strategy)"
+,,,33,116,Cuento con un análisis realizado en conjunto con profesionales con buenas perspectivas
+,,,33,117,Tengo una respuesta positiva a las solicitudes de las autoridades y análisis de la respuesta realizado
+,,,33,118,"Tengo una evaluación inicial de la libertad para operar con el propósito de comprender el panorama de los DPI en el campo (quién está activo, qué DPI clave) y si podría depender de otros DPI o ser detenido por ellos"
+,,,33,119,Cuento con posibles DPI complementarios/adicionales identificados para proteger
+,,,33,120,Tengo completa una estrategia de DPI elaborada (validada por profesional) que soporta la estrategia de negocio
+,,,34,121,Cuento con una evaluación más completa de la libertad para operar y comprensión clara de la dependencia/restricción de otros DPI
+,,,34,122,"Mi proyecto entró en la fase nacional/regional (EE. UU., UE, Japón, etc.) con solicitud/registro de DPI clave"
+,,,35,123,Tengo solicitud(es)/registro(s) de DPI complementarios o adicionales presentados
+,,,35,124,Mis DPI clave se otorgaron en el primer país/región con alcance relevante para el negocio
+,,,35,125,"La estrategia de mi DPI está completamente implementada. Los derechos de propiedad intelectual se utilizan de forma proactiva para respaldar/proteger el negocio, los acuerdos relacionados con los derechos de propiedad intelectual se gestionan profesionalmente, el proceso para asegurar nuevos derechos de propiedad intelectual está en marcha"
+,,,36,126,Tengo los acuerdos vigentes para acceder a todos los DPI externos necesarios
+,,,36,127,Mis DPI clave y complementarios se otorgan y mantienen en varios países relevantes para los negocios.
+,,,36,128,Se ha demostrado que mi estrategia de derechos de propiedad intelectual respalda y crea valor para las empresas
+,,,37,129,Poca información sobre las diferentes opciones de financiación y los tipos de financiación.
+,,,37,130,Poca información sobre las diferentes opciones de financiación y los tipos de financiación.
+,,,37,131,Poca o ninguna información sobre las actividades y costos relevantes para verificar el potencial/factibilidad de la idea
+,,,38,132,"Hay un plan básico con opciones de financiación para los hitos iniciales (por ejemplo, 1-6 meses)"
+,,,38,133,"Actividades iniciales y costos para verificar el potencial/factibilidad si se describe la idea (por ejemplo, 1-6 meses)"
+,,,39,134,"Conocimiento de los diferentes tipos de financiación (propia, blanda, de capital, de clientes, etc.) y las ventajas y desventajas típicas"
+,,,39,135,"Financiación suficiente asegurada para las actividades iniciales de verificación/factibilidad (p. ej., 1 a 6 meses)"
+,,,40,136,Obtuvo fondos suficientes para implementar una parte sustancial del plan de verificación
+,,,40,137,Fuentes de financiación pertinentes identificadas
+,,,40,138,"Se ha elaborado un plan para verificar el potencial comercial de la idea (p. ej., de 3 a 12 meses, incluidas las hipótesis para verificar, los objetivos, las actividades, el cronograma, la necesidad de financiamiento)"
+,,,41,139,"Información sobre los requisitos y las consecuencias de la financiación externa (en particular, la financiación de capital) en el modelo de negocio, el control y la propiedad"
+,,,41,140,"Decidido sobre la estrategia de financiación y las fuentes de financiación para alcanzar un modelo de negocio viable, basado en las ventajas y desventajas de las diferentes estrategias."
+,,,41,141,Presupuesto inicial de PnL y flujo de caja para los próximos 12 meses en formato de hoja de cálculo
+,,,41,142,"Propuesta de financiación (p. ej., formato de propuesta de inversión) elaborada y probada en una audiencia relevante"
+,,,42,143,Presupuesto de PnL de 3 a 5 años y flujo de efectivo para negocios/proyectos en formato de hoja de cálculo que aclara la necesidad de financiamiento a corto y mediano plazo
+,,,42,144,El tono actualizado/mejorado para la financiación se ha probado en una audiencia relevante
+,,,43,145,Sistemas básicos de contabilidad y documentación para el seguimiento financiero
+,,,43,146,"La propuesta de financiación está completa, probada y probada, y un plan de negocios (o equivalente) con proyecciones financieras, plan de hitos, etc. esta en su lugar"
+,,,43,147,"Discusiones con posibles fuentes de financiación externas en torno a una oferta definida (cuánto dinero, para qué, condiciones, valoración, etc.)"
+,,,44,148,"Toda la documentación y los acuerdos legales, de propiedad intelectual, financieros y operativos clave recopilados y disponibles para revisión externa (diligencia debida)"
+,,,44,149,Entidad legal correctamente establecida con estructura de propiedad adecuada para la fuente de financiación planificada (no fragmentada o partes significativas en manos de personas inactivas/no contribuyentes)
+,,,44,150,"Todo el material de apoyo necesario para la financiación externa disponible (finanzas, plan de negocios, etc.)"
+,,,44,151,Discusiones concretas (a nivel de hoja de términos) con una o varias fuentes de financiación externas que claramente están interesadas
+,,,45,152,Sistema de seguimiento financiero y contabilidad completamente implementado para el control continuo del estado financiero actual y un buen pronóstico/previsión de futuras necesidades de financiación
+,,,45,153,Financiación asegurada para al menos 6-12 meses de ejecución de acuerdo con el plan comercial/plan operativo actual: el dinero está en la cuenta bancaria o los ingresos recurrentes predecibles
+,,,46,154,Hay una idea vaga de una tecnología a desarrollar.
+,,,46,155,Hay resultados de una investigación con beneficios potenciales o aplicaciones útiles identificadas.
+,,,47,156,"Las aplicaciones prácticas de mi proyecto se pueden definir/investigar, pero son especulativas y no hay pruebas ni análisis detallados de que la tecnología funcionará."
+,,,47,157,Está definido un concepto de tecnología potencial.
+,,,48,158,Existe una primera idea de los requisitos/especificaciones del usuario final y/o casos de uso de la tecnología desarrollada
+,,,48,159,Hay una I+D activa para desarrollar aún más la tecnología
+,,,48,160,Las pruebas en el entorno de laboratorio (analíticas y/o experimentales) de parámetros/características/funciones importantes muestran que el concepto de tecnología podría funcionar y ser factible
+,,,49,161,"Los resultados de las pruebas brindan evidencia inicial que indica que el concepto de tecnología funcionará (es decir, validación inicial)"
+,,,49,162,Los componentes básicos se integran y se demuestra que funcionan juntos y producen los resultados deseados dentro de mi entorno en el laboratorio
+,,,50,163,Ya se tienen los requisitos/especificaciones del usuario final más definidos y/o casos de uso basados en los comentarios de los usuarios
+,,,50,164,"Los resultados de las pruebas brindan evidencia que indica que la tecnología funcionará (es decir, validación)"
+,,,50,165,Los componentes básicos se integran y prueban de una forma más realista en un entorno relevante
+,,,51,166,"Ha quedado demostrado que realmente funciona (es decir, demostración), es decir, cumple con la mayoría de los requisitos de rendimiento importantes"
+,,,51,167,El prototipo = la tecnología en una forma que se puede utilizar para evaluar la viabilidad técnica y/o de fabricación o la utilidad del producto final
+,,,51,168,"El modelo representativo = una forma funcional de la tecnología, generalmente reducida en escala, cerca o en la especificación operativa"
+,,,51,169,Se ha demostrado que el modelo o prototipo representativo de la tecnología funciona realmente en un entorno relevante
+,,,52,170,Ya están establecidos los requisitos/especificaciones y/o casos de uso completos del usuario final
+,,,52,171,El entorno operativo = entorno que aborda todos los requisitos y especificaciones operativos donde los usuarios finales utilizarán la tecnología
+,,,52,172,Se ha demostrado que mi prototipo funciona realmente en un entorno operativo
+,,,53,173,Las operaciones reales = a las implementadas por los usuarios finales por su cuenta en sus operaciones diarias
+,,,53,174,Probado para trabajar = cumplir con todos los requisitos/especificaciones de rendimiento
+,,,53,175,"Tecnología completa = Completa: contiene todo lo que el usuario necesita para usarla; Funcional: todo funciona como debería para que el usuario resuelva su problema/necesidad; Compatible: compatible con personas, procesos, objetivos, infraestructura, sistemas, etc. en el usuario; Producible: posible de producir a un costo razonable."
+,,,53,176,Los primeros usuarios han demostrado que la tecnología completa funciona en operaciones reales
+,,,54,177,"El desarrollo es continuo, la mejora, la optimización de la tecnología y la producción están en curso."
+,,,54,178,La tecnología completa es escalable y se ha comprobado que funciona en operaciones reales por parte de varios usuarios a lo largo del tiempo

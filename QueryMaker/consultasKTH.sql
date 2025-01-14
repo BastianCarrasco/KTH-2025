@@ -1,0 +1,9 @@
+SELECT
+	PR.TEXTO AS TEXTO_PREGUNTA,
+	ALT.TEXTO AS TEXTO_ALTER,
+	TIPO."nombre" AS CLAVE_CATEGORIA
+FROM
+	PREGUNTAS AS PR
+	JOIN PREGUNTA_ALTERNATIVA AS P_A ON PR."id_pregunta" = P_A."id_pregunta"
+	JOIN ALTERNATIVAS AS ALT ON ALT."id_alternativa" = P_A."id_alternativa"
+	JOIN CATEGORIAS AS TIPO ON TIPO."id_categoria" = PR."id_categoria"

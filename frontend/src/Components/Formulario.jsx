@@ -4,6 +4,7 @@ import { Chart } from "react-chartjs-2";
 
 const Formulario = () => {
   const [progreso, setProgreso] = useState(0);
+
   const [valores, setValores] = useState({
     TRL: 0,
     CRL: 0,
@@ -49,33 +50,23 @@ const Formulario = () => {
     alternativaIndex,
     esSi
   ) => {
-    if (respondidas[`${categoria}-${preguntaIndex}-${alternativaIndex}`])
-      return;
-
-    if (esSi) {
-      const incremento = 1;
-      setValores((prevValores) => ({
-        ...prevValores,
-        [categoria]: prevValores[categoria] + incremento,
-      }));
-    }
-
+    // Registrar la respuesta
     setRespondidas((prevRespondidas) => ({
       ...prevRespondidas,
-      [`${categoria}-${preguntaIndex}-${alternativaIndex}`]: true,
+      [`${categoria}-${preguntaIndex}-${alternativaIndex}`]: esSi,
     }));
 
+    // Verificar si todas las respuestas son 'Sí'
     const pregunta = preguntas[preguntaIndex];
     const todasRespuestasSi = pregunta.alternativas.every(
       (_, index) =>
-        respondidas[`${categoria}-${preguntaIndex}-${index}`] && esSi
+        respondidas[`${categoria}-${preguntaIndex}-${index}`] || esSi
     );
 
     if (todasRespuestasSi) {
-      const incremento = 1;
       setValores((prevValores) => ({
         ...prevValores,
-        [categoria]: prevValores[categoria] + incremento,
+        [categoria]: preguntaIndex + 1, // Setear el valor igual al número de la pregunta
       }));
     }
 
@@ -158,11 +149,6 @@ const Formulario = () => {
                           true
                         )
                       }
-                      disabled={
-                        respondidas[
-                          `${pregunta.clave_categoria}-${preguntaIndex}-${alternativaIndex}`
-                        ]
-                      }
                       className={`px-4 py-2 rounded ${
                         respondidas[
                           `${pregunta.clave_categoria}-${preguntaIndex}-${alternativaIndex}`
@@ -181,11 +167,6 @@ const Formulario = () => {
                           alternativaIndex,
                           false
                         )
-                      }
-                      disabled={
-                        respondidas[
-                          `${pregunta.clave_categoria}-${preguntaIndex}-${alternativaIndex}`
-                        ]
                       }
                       className={`px-4 py-2 rounded ${
                         respondidas[

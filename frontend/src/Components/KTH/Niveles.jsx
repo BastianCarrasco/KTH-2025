@@ -52,7 +52,9 @@ const Niveles = () => {
   };
 
   return (
-    <div className="p-6 flex flex-col items-center">
+    <div className="p-6 flex flex-col items-center text-white">
+      {" "}
+      {/* Aquí se asegura que todo el texto sea blanco */}
       <h1 className="text-2xl font-bold mb-4 text-center">
         Niveles de Preparación
       </h1>
@@ -94,7 +96,6 @@ const Niveles = () => {
           {mostrarFRL ? "Ocultar FRL" : "Mostrar FRL"}
         </button>
       </div>
-
       {(mostrarCRL ||
         mostrarTRL ||
         mostrarBRL ||
@@ -159,12 +160,7 @@ const Niveles = () => {
             ).map(([key, value]) => (
               <div key={key} className="mb-4">
                 <h2 className="text-xl font-bold">{key.toUpperCase()}</h2>
-                <p
-                  style={{ fontSize: "20px" }}
-                  className="text-sm text-black-700"
-                >
-                  {value}
-                </p>
+                <p className="text-sm">{value}</p>
               </div>
             ))}
           </div>

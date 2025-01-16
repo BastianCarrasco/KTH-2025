@@ -80,3 +80,19 @@ export const FRL = [
     n1: "No hay una descripción clara de las actividades iniciales de verificación. No hay una visión clara de las necesidades iniciales de financiamiento ni de las opciones de financiamiento.",
   },
 ];
+
+export const definiciones = [
+  {
+    TRL: "(Technology Readiness Level): Este es el nivel de madurez tecnológica, utilizado para evaluar el progreso de una tecnología desde la investigación básica hasta su implementación comercial. Generalmente, va del nivel 1 (investigación básica) hasta el nivel 9 (tecnología completamente probada y en uso comercial).",
+
+    CRL: "(Commercial Readiness Level): El nivel de preparación comercial, que evalúa la capacidad de una tecnología para ser llevada al mercado, teniendo en cuenta factores como la viabilidad económica, la competencia y la demanda.",
+
+    BRL: "(Business Readiness Level): El nivel de preparación empresarial, que se refiere a la madurez de la estrategia de negocio y la estructura organizacional necesarias para respaldar una tecnología o innovación en el mercado.",
+
+    FRL: "(Financial Readiness Level): El nivel de preparación financiera, que mide la capacidad de la tecnología para asegurar la financiación necesaria en diferentes etapas de su desarrollo y comercialización.",
+
+    IPRL: "(Intellectual Property Readiness Level): El nivel de preparación en propiedad intelectual, que evalúa la protección de la tecnología a través de patentes, marcas, derechos de autor u otros mecanismos de propiedad intelectual.",
+
+    TEAM: "(Team Readiness Level): El nivel de preparación del equipo, que mide si el equipo de trabajo tiene las habilidades y la experiencia necesarias para llevar a cabo el proyecto de innovación con éxito.",
+  },
+];

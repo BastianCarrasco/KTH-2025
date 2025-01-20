@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js ",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "dev": "nodemon src/index.js "
   },
   "keywords": [],
   "author": "",

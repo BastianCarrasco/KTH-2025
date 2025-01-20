@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.JPG'], // Incluir archivos JPG como assets
+  base: "/KTH-2025"
 });

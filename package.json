@@ -1,11 +1,14 @@
 {
   "name": "kth",
+  "homepage": "http://BastianCarrasco.github.io//KTH-2025",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js "
+    "dev": "nodemon src/index.js ",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",

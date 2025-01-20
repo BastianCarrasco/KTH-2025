@@ -20,10 +20,6 @@ const Docentes = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-6 text-center">
-        Lista de Investigadores
-      </h1>
-
       {/* Filtros */}
       <div className="mb-6 flex justify-between">
         {/* Filtro por Escuela */}

@@ -5,8 +5,8 @@ import Home from "./Components/Home";
 import Proyectos from "./Components/Proyectos";
 import Docentes from "./Components/Docentes";
 import Niveles from "./Components/KTH/Niveles";
-import Formulario from "./Components/Formulario";
 import Formualrio2 from "./Components/Formualrio2";
+import Simulador from "./Components/Simulador";
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
             <Route path="/datos" element={<Proyectos />} />
             <Route path="/docentes" element={<Docentes />} />
             <Route path="/niveles" element={<Niveles />} />
-            <Route path="/formulario" element={<Formulario />} />
+            <Route path="/simulador" element={<Simulador />} />
             <Route path="/formulario2" element={<Formualrio2 />} />
           </Routes>
         </div>

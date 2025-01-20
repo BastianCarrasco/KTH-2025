@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import GraficoCategorias from "../Components/GraficoCategorias"; // Importamos el componente del gráfico
 import { definiciones } from "./KTH/TextosNiveles";
+import { exportarJSONaTXT } from "./respuestas";
 
 export default function Formualrio2() {
   const [preguntas, setPreguntas] = useState([]);
@@ -10,6 +11,7 @@ export default function Formualrio2() {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("CRL");
   const [categorias, setCategorias] = useState([]);
   const [definicionSeleccionada, setDefinicionSeleccionada] = useState("");
+  let link = "http://localhost:5150/all";
 
   const [graficoData, setGraficoData] = useState({
     labels: [], // Categorías
@@ -61,7 +63,7 @@ export default function Formualrio2() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5150/all")
+      .get(link)
       .then((response) => {
         const datosAgrupados = response.data.reduce((acc, curr) => {
           const preguntaExistente = acc.find(
@@ -168,10 +170,14 @@ export default function Formualrio2() {
             </button>
           ))}
         </div>
+        <br></br>
 
         {/* Mostrar la definición de la categoría seleccionada */}
         {definicionSeleccionada && (
-          <div className="mt-4 p-4 bg-gray-100 rounded">
+          <div
+            style={{ marginRight: "100px" }}
+            className="mt-4 p-4 bg-gray-100 rounded"
+          >
             <h4 className="font-bold">Definición:</h4>
             <p>{definicionSeleccionada}</p>
           </div>
@@ -179,6 +185,16 @@ export default function Formualrio2() {
 
         {/* Mostrar gráfico de categorías completadas */}
         <GraficoCategorias graficoData={graficoData} />
+
+        <div>
+          {/* <h1>Exportar JSON a TXT</h1> */}
+          <button
+            style={{ color: "white", backgroundColor: "red" }}
+            onClick={() => exportarJSONaTXT("datos_proyecto", respuestas)}
+          >
+            Descargar TXT
+          </button>
+        </div>
       </div>
 
       {/* Mostrar preguntas filtradas */}

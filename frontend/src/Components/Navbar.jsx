@@ -3,22 +3,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [showModal, setShowModal] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleLogin = () => {
-    if (username === "usuario" && password === "clave123") {
-      setIsAuthenticated(true);
-      setShowModal(false);
-    } else {
-      alert("Credenciales incorrectas");
-    }
+    // Simulación de autenticación simple
+    setIsAuthenticated(true);
   };
 
   return (
@@ -28,7 +21,7 @@ const Navbar = () => {
         className="bg-slateCustom p-4"
       >
         <div className="flex justify-between items-center">
-          <div className="text-white text-lg font-bold">Mi App</div>
+          <div className="text-white text-lg font-bold">KTH</div>
           <button
             className="text-white md:hidden focus:outline-none"
             onClick={toggleMenu}
@@ -52,17 +45,18 @@ const Navbar = () => {
             <Link to="/" className="text-white hover:text-gray-300">
               Home
             </Link>
+            <Link to="/simulador" className="text-white hover:text-gray-300">
+              Simulador
+            </Link>
             <Link to="/docentes" className="text-white hover:text-gray-300">
               Docentes
             </Link>
             <Link to="/niveles" className="text-white hover:text-gray-300">
               Niveles
             </Link>
-            <Link to="/formulario" className="text-white hover:text-gray-300">
-              Formulario
-            </Link>
+
             <Link to="/formulario2" className="text-white hover:text-gray-300">
-              FF
+              Formulario
             </Link>
             {isAuthenticated ? (
               <Link to="/datos" className="text-white hover:text-gray-300">
@@ -70,7 +64,7 @@ const Navbar = () => {
               </Link>
             ) : (
               <button
-                onClick={() => setShowModal(true)}
+                onClick={handleLogin}
                 className="text-white hover:text-gray-300"
               >
                 Proyectos
@@ -89,57 +83,12 @@ const Navbar = () => {
             Home
           </Link>
           <button
-            onClick={() => setShowModal(true)}
+            onClick={handleLogin}
             className="block text-white hover:text-gray-300"
           >
             Datos
           </button>
         </div>
-
-        {/* Authentication Modal */}
-        {showModal && (
-          <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h2 className="text-xl font-bold mb-4">Ingresar</h2>
-              <div className="mb-4">
-                <label className="block text-sm font-medium mb-2">
-                  Usuario
-                </label>
-                <input
-                  type="text"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-md"
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-sm font-medium mb-2">
-                  Contraseña
-                </label>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-md"
-                />
-              </div>
-              <div className="flex justify-between">
-                <button
-                  onClick={handleLogin}
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md"
-                >
-                  Ingresar
-                </button>
-                <button
-                  onClick={() => setShowModal(false)}
-                  className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md"
-                >
-                  Cancelar
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
       </nav>
     </>
   );

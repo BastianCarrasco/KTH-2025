@@ -2,8 +2,35 @@ import React, { useState } from "react";
 import { proyectos } from "./proyectos_data";
 import { investigador } from "./investigadores";
 import ScatterHexagonalChart from "./hex";
+import ProjectFormModal from "./ProjectFormModal";
+import { Radar } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
 
 import AntenasImg from "../assets/Antenas con aplicaciones satelitales Impresas con tecnología 3D.JPG";
+
+// Register chart.js components
+ChartJS.register(
+  RadialLinearScale,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Title,
+  Tooltip,
+  Legend
+);
 
 const getColorByValue = (value) => {
   if (value === 1) {
@@ -20,6 +47,15 @@ const getColorByValue = (value) => {
 
 const Proyectos = () => {
   const [proyectoSeleccionado, setProyectoSeleccionado] = useState(null);
+  const [claves, setClaves] = useState({});
+
+  const verificarClaveYAbrirProyecto = (index) => {
+    if (claves[index] === "tuClaveSegura" || claves[index] === "12345") {
+      handleProyectoClick(index);
+    } else {
+      alert("Clave incorrecta");
+    }
+  };
 
   const handleProyectoClick = (index) => {
     setProyectoSeleccionado(proyectos[index]);
@@ -29,15 +65,12 @@ const Proyectos = () => {
   const getInvestigadoresDelProyecto = () => {
     if (proyectoSeleccionado) {
       const investigadores = [];
-
-      // Add investigador principal with label "Investigador"
       investigador.forEach((inv) => {
         if (inv.nombre === proyectoSeleccionado.investigador) {
           investigadores.push({ ...inv, tipo: "Investigador" });
         }
       });
 
-      // Add colaboradores with label "Colaborador"
       proyectoSeleccionado.colaboradores.forEach((colab) => {
         investigador.forEach((inv) => {
           if (inv.nombre === colab) {
@@ -51,28 +84,64 @@ const Proyectos = () => {
     return [];
   };
 
+  const handleClaveChange = (index, value) => {
+    setClaves({ ...claves, [index]: value });
+  };
+
+  // Radar chart data
+  const getRadarChartData = () => {
+    if (!proyectoSeleccionado) return {};
+
+    const labels = Object.keys(proyectoSeleccionado.niveles);
+    const data = Object.values(proyectoSeleccionado.niveles);
+
+    return {
+      labels: labels,
+      datasets: [
+        {
+          label: "Niveles",
+          data: data,
+          backgroundColor: "rgba(0, 123, 255, 0.2)",
+          borderColor: "rgba(0, 123, 255, 1)",
+          borderWidth: 1,
+        },
+      ],
+    };
+  };
+
   return (
-    <div className="p-4">
-      {/* Grid de dos columnas */}
+    <div style={{ color: "white" }} className="p-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-        {/* Columna izquierda con los proyectos */}
         <div>
+          <ProjectFormModal></ProjectFormModal>
           <h2 className="text-xl font-semibold mb-4">Proyectos</h2>
           <div className="grid grid-cols-1 gap-4">
             {proyectos.map((proyecto, index) => (
-              <button
+              <div
                 key={index}
-                className="border rounded-lg p-4 shadow-md text-left hover:bg-gray-100"
-                onClick={() => handleProyectoClick(index)}
+                className="border rounded-lg p-4 shadow-md text-left"
               >
                 <h3 className="text-lg font-semibold">{proyecto.titulo}</h3>
                 <p className="text-sm text-gray-600">{proyecto.tecnologia}</p>
-              </button>
+                <input
+                  style={{ color: "black" }}
+                  type="password"
+                  value={claves[index] || ""}
+                  onChange={(e) => handleClaveChange(index, e.target.value)}
+                  placeholder="Ingresa la clave"
+                  className="mt-2 p-2 border rounded"
+                />
+                <button
+                  className="mt-2 p-2 bg-blue-500 text-white rounded"
+                  onClick={() => verificarClaveYAbrirProyecto(index)}
+                >
+                  Ver detalles
+                </button>
+              </div>
             ))}
           </div>
         </div>
 
-        {/* Columna derecha con los detalles del proyecto seleccionado */}
         {proyectoSeleccionado && (
           <div className="md:col-span-2">
             <h2 className="text-xl font-semibold mb-4">
@@ -183,7 +252,6 @@ const Proyectos = () => {
                 </tbody>
               </table>
 
-              {/* Mostrar los investigadores relacionados con el proyecto */}
               <h3 className="text-lg font-semibold mb-2">
                 Investigadores Relacionados
               </h3>
@@ -193,7 +261,6 @@ const Proyectos = () => {
                     key={idx}
                     className="border-b border-gray-300 p-4 flex items-start space-x-4"
                   >
-                    {/* Columna para los datos */}
                     <div className="flex-1">
                       <table className="table-auto w-full text-left">
                         <tbody>
@@ -240,34 +307,38 @@ const Proyectos = () => {
                         </tbody>
                       </table>
                     </div>
-
-                    {/* Columna para la foto */}
                     <div className="w-32 h-32 flex-shrink-0">
                       <img
-                        src={
-                          investigador.foto || "https://via.placeholder.com/150"
-                        } // Imagen predeterminada de avatar
+                        src={investigador.foto}
                         alt={investigador.nombre}
-                        className="w-full h-full object-cover rounded-lg"
+                        className="w-full h-full rounded-full"
                       />
                     </div>
-
-                    {/* Indicador de tipo (Investigador o Colaborador) */}
-                    <span
-                      className={`text-xs font-semibold p-1 ${
-                        investigador.tipo === "Investigador"
-                          ? "bg-blue-500 text-white"
-                          : "bg-green-500 text-white"
-                      }`}
-                    >
-                      {investigador.tipo}
-                    </span>
                   </li>
                 ))}
               </ul>
 
-              <h3 className="text-lg font-semibold mb-2">GRAFICO</h3>
-              <ScatterHexagonalChart niveles={proyectoSeleccionado.niveles} />
+              <h3 className="text-lg font-semibold mb-2">GRAFICOS</h3>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  gap: "20px",
+                }}
+              >
+                <div style={{ width: "50%", height: "400px" }}>
+                  <Radar
+                    data={getRadarChartData()}
+                    options={{ responsive: true }}
+                  />
+                </div>
+
+                <div style={{ width: "50%", height: "400px" }}>
+                  <ScatterHexagonalChart
+                    niveles={proyectoSeleccionado.niveles}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         )}

@@ -1,2 +1,5 @@
 
 .gitattributes
+.env
+*"KTH INNOVATION SCALES COMPACTO"
+node_modules

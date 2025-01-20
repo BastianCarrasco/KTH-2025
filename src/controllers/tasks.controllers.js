@@ -1,14 +1,22 @@
 const pool = require('../db'); // Asegúrate de que la conexión a la base de datos esté configurada en este archivo
 
-const getallCategorias = async (req, res) => {
+const Preg_Categorias = async (req, res) => {
     try {
-        const categorias = await pool.query('SELECT * FROM categorias');
+        const categorias = await pool.query(`
+        SELECT
+          preguntas.id_pregunta,
+          preguntas.texto,
+          categorias.nombre
+        FROM preguntas
+        JOIN categorias ON preguntas.id_categoria = categorias.id_categoria
+      `);
         res.json(categorias.rows);
     } catch (error) {
         console.error(error.message);
         res.status(500).json({ error: 'Error al obtener categorías' });
     }
 };
+
 
 const getall = async (req, res, next) => {
     const script = `
@@ -32,4 +40,4 @@ const getall = async (req, res, next) => {
     }
 };
 
-module.exports = { getallCategorias, getall };
+module.exports = { Preg_Categorias, getall };

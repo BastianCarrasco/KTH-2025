@@ -20,5 +20,5 @@ app.use((error, req, res, next) => {
 });
 
 app.listen(link, () => {
-    console.log("Servidor escucha en el puerto", link);
+    console.log(`Server is running on http://localhost:${link}`);
 });
